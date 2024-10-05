@@ -1,0 +1,143 @@
+/* Inheriting the global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #eefbfb;
+}
+
+/* Adding specific styles for the About Me sections */
+header {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 1rem;
+    background-color: #eefbfb;
+    color: #000;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #fff;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    background-color: #fff;
+}  
+
+li strong {
+    font-weight: bold;
+    background-color: #fff;
+}
+
+
+
+/* Reusing button styles */
+button.toggle-btn {
+    padding: 0.75rem 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button.toggle-btn:hover {
+    background: #adadad;
+    color: #000;
+}
+
+.content {
+    display: none;
+    transition: max-height 0.2s ease-out;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+footer a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0073b1; /* LinkedIn blue */
+}
+
+footer a.github:hover {
+    color: #fff; /* GitHub white */
+}
+
+footer a.upwork:hover {
+    color: #32cd32; /* Upwork green */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    button.toggle-btn {
+        font-size: 0.875rem;
+    }
+}

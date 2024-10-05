@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+nav {
+    height: 80px;
+    background: #eefbfb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+nav .logo {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+nav a {
+    color:#000;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+nav a:hover {
+    color: #adadad;
+}
+
+nav a.active {
+    color: #adadad;
+}
+
+.hero {
+    background: #eefbfb;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem calc((100vw - 1300px) / 2);
+    height: 95vh;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 1.4;
+    color:#000;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.column-left p {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.column-left p.description {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #adadad;
+    color: #000;
+    transition: 0.2s ease-in-out;
+}
+
+.column-right {
+    flex: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.column-right img {
+    width: 75%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+
+footer {
+    background: #000;
+    bottom: 0;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+footer a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #0073b1;
+}
+footer a.github:hover {
+    color: #fff;
+}
+footer a.upwork:hover {
+    color:#32cd32;
+}
